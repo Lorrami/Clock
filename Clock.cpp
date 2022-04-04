@@ -9,6 +9,5 @@ void Clock::GetElapsedTime() {
 }
 
 void Clock::Restart() {
-    // start = clock();
-    //НУ ЧТО ЗА ПОЕБОТИНА, ГОСПОДИ, КАК ОНО ДОЛЖНО РАБОТАТЬ
+    start = clock();
 }
