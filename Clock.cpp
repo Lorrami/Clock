@@ -3,9 +3,9 @@
 Clock::Clock() {
     start = clock();
 }
-void Clock::GetElapsedTime() {
-    end = clock() - start;
-    printf ("It took me %f seconds.\n",((float)end)/CLOCKS_PER_SEC);
+float Clock::GetElapsedTime() {
+    clock_t end = clock() - start;
+    return ((float)end)/CLOCKS_PER_SEC;
 }
 
 void Clock::Restart() {

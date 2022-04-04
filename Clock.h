@@ -7,11 +7,10 @@
 class Clock {
 private:
     clock_t start;
-    clock_t end{};
 public:
     Clock();
     ~Clock() = delete;
 public:
-    void GetElapsedTime();
+    float GetElapsedTime();
     void Restart();
 };
