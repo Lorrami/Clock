@@ -11,6 +11,6 @@ public:
     Clock();
     ~Clock() = delete;
 public:
-    float GetElapsedTime();
+    float GetElapsedTime() const;
     void Restart();
 };
